@@ -31,9 +31,14 @@ public class Login {
 		String passwordUpdate = sc.next();
 		if(passwordUpdate.equals("yes")){
 			updatePassword();
+			Booking.bookTicket();
+			System.out.println("Thank you for choosing SPI Cinemas");
 		}
 		else{
 			System.out.println("Exit");
+			System.out.println("-----------------------------");
+			Booking.bookTicket();
+			System.out.println("Thank you for choosing SPI Cinemas");
 		}
 		
 		
@@ -45,6 +50,7 @@ public class Login {
 		Scanner sc = new Scanner(System.in);
 		passWord = sc.next();
 		System.out.println("Your password has been succesfully updated!!");
+		System.out.println("-----------------------------");
 	}
 
 }

@@ -17,6 +17,7 @@ public class Booking {
 
 	public static void bookTicket() {
 		// TODO Auto-generated method stub
+		System.out.println("Let's start to book your tickets!");
 		System.out.println("Please enter the date for booking:");
 		bookingDate=sc.next();
 		System.out.println("Select the show time from below:");
